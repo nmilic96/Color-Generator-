@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-
+<head> 
     <title>Color Generator</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Really simple color generator">
-
+    <meta name="theme-color" content="#1a1a1a" />
 
 </head>
 
@@ -19,7 +19,6 @@
         </section>
     </main>
     <script>
-
     function generateColor() {
         var colorOutput = document.querySelector("#colorOutput");
         var colorBox = document.querySelector("#colorBox");
@@ -31,7 +30,6 @@
     }
 
     window.onload = generateColor;
-    
     </script>
 </body>
 
