@@ -8,7 +8,8 @@ html {
     background: #FFFF;
     font-size: calc(16/1920*100vw);
     font-family: sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 0.625rem;
+    font-weight: 300;
 }
 
 @media only screen and (max-width: 640px) {
