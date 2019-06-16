@@ -5,16 +5,41 @@
 }
 
 html {
+    background: #FFFF;
+    font-size: calc(16/1920*100vw);
+    font-family: sans-serif;
+    letter-spacing: 4px;
+}
 
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: calc(16/640*100vw);
+  }
 }
 
 .color-wrapper {
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 .color-wrapper__color {
     height: 100%;
     width: 100%;
     transition: background-color 300ms ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.color-wrapper__output {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #FFFF;
+    text-shadow: 2px 2px 4px #00000070;
+    z-index: 2;
 }

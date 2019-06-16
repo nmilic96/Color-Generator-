@@ -9,8 +9,9 @@
 
 <body>
     <main>
-        <section class="color-wrapper" onclick="generateColor()">
-            <div id="colorBox" class="color-wrapper__color"></div>
+        <section class="color-wrapper">
+            <div id="colorBox" class="color-wrapper__color" onclick="generateColor()"></div>
+            <div id="colorOutput" class="color-wrapper__output"></div>
         </section>
     </main>
     <script>
@@ -19,8 +20,13 @@
 
 
     function generateColor() {
+        var colorOutput = document.querySelector("#colorOutput");
         var colorBox = document.querySelector("#colorBox");
-        colorBox.style.backgroundColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+
+        var color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16)
+        colorBox.style.backgroundColor = color;
+        colorOutput.innerHTML = color;
+
     }
 
     window.onload = generateColor;
