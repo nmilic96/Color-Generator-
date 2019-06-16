@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Color Generator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <main>
-        <section> 
-        </section> 
+        <section class="color-wrapper" onclick="generateColor()">
+            <div id="colorBox" class="color-wrapper__color"></div>
+        </section>
     </main>
+    <script>
+    console.log();
+
+
+
+    function generateColor() {
+        var colorBox = document.querySelector("#colorBox");
+        colorBox.style.backgroundColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+    }
+
+    window.onload = generateColor;
+    
+    </script>
 </body>
+
 </html>

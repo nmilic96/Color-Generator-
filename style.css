@@ -16,4 +16,5 @@ html {
 .color-wrapper__color {
     height: 100%;
     width: 100%;
+    transition: background-color 300ms ease-in-out;
 }
