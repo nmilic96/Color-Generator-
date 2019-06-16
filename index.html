@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head> 
+    <meta charset="utf-8">
     <title>Color Generator</title>
-    <link rel="manifest" href="./manifest.json">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./icons/512x512.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icons/512x512.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Really simple color generator">
-    <meta name="theme-color" content="#1a1a1a" />
-
 </head>
 
 <body>
@@ -19,7 +18,9 @@
             <div id="colorOutput" class="color-wrapper__output"></div>
         </section>
     </main>
+
     <script>
+
     function generateColor() {
         var colorOutput = document.querySelector("#colorOutput");
         var colorBox = document.querySelector("#colorBox");
@@ -31,7 +32,10 @@
     }
 
     window.onload = generateColor;
+
     </script>
+    
+    <script src="js/main.js"></script>
 </body>
 
 </html>
