@@ -7,9 +7,14 @@
 html {
     background: #FFFF;
     font-size: calc(16/1920*100vw);
-    font-family: sans-serif;
+    font-family: monospace;
     letter-spacing: 0.625rem;
     font-weight: 300;
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: calc(16/1024*100vw);
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -17,6 +22,7 @@ html {
     font-size: calc(16/640*100vw);
   }
 }
+
 
 .color-wrapper {
     height: 100vh;
@@ -49,6 +55,7 @@ html {
     border: none;
     transition: all 50ms ease-in-out;
     letter-spacing: 0.625rem;
+    font-family: monospace;
 }
 
 .color-wrapper__output:active {
@@ -106,4 +113,16 @@ html {
     background: #000;
     font-weight: 500;
     letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .clipboard-info {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .intall-btn {
+    font-size: 2rem;
+  }
 }
