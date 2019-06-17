@@ -6,6 +6,8 @@
     "display" : "standalone",
     "orientation" : "any",
     "lang" : "English",
+    "theme_color" : "#d80443",
+     "background_color": "#d80443",
     "icons": [
     {
       "src": "images/icons/icon-72x72.png",
