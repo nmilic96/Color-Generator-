@@ -45,6 +45,20 @@ html {
     color: #FFFF;
     text-shadow: 2px 2px 4px #00000070;
     z-index: 2;
+    background: transparent;
+    border: none;
+    transition: all 50ms ease-in-out;
+    letter-spacing: 0.625rem;
+}
+
+.color-wrapper__output:active {
+    transform: scale(1.1);
+    opacity: 0.5;
+    outline: none;
+}
+
+.color-wrapper__output:focus {
+    outline: none;
 }
 
 .install-btn__wrap {
