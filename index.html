@@ -4,9 +4,9 @@
 <head> 
     <meta charset="utf-8">
     <title>Color Generator</title>
-    <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/images/icons/icon-512x512.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icons/icon-512x512.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Really simple color generator">
     <meta name="theme-color" content="#317EFB"/>
@@ -105,7 +105,7 @@
         } else {
           // Register the service worker
           navigator.serviceWorker
-            .register("/pwabuilder-sw.js", {
+            .register("pwabuilder-sw.js", {
               scope: "./"
             })
             .then(function (reg) {
