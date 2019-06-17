@@ -92,3 +92,18 @@ html {
 .hide {
     display: none;
 }
+
+.clipboard-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.75rem;
+    opacity: 0.8;
+    padding: 0.625rem;
+    z-index: 5;
+    color: #FFF;
+    font-family: monospace;
+    background: #000;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
