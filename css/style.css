@@ -100,7 +100,7 @@ html {
     display: none;
 }
 
-.clipboard-info {
+.clipboard-info, .git-link {
     position: absolute;
     top: 0;
     left: 0;
@@ -115,14 +115,25 @@ html {
     letter-spacing: 3px;
 }
 
+.git-link {
+    left: auto;
+    right: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.git-link:hover {
+    opacity: 0.5;
+}
+
 @media only screen and (max-width: 1024px) {
-  .clipboard-info {
+  .clipboard-info, .git-link {
     font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
   }
 
   .intall-btn {
     font-size: 2rem;
   }
 }
+
